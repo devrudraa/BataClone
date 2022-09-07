@@ -31,12 +31,12 @@ for (let i = 0; i < 5; i++) {
         <div class="buttons" style="display: grid;">
             <button class="cardbuttons">Order Now
                 <span class="material-symbols-outlined">
-                    <!-- shopping_bag -->
+                    shopping_bag
                 </span>
             </button>
             <button class="cardbuttons">Add To Cart
                 <span class="material-symbols-outlined">
-                    <!-- add_shopping_cart -->
+                   add_shopping_cart
                 </span>
             </button>
         </div>
