@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+#back {
+    width: 100vw;
+    height: 100vh;
+    background-color: #e7ffff57;
+    z-index: -10;
+    position: fixed;
+}
+
+#back .circleMain1 {
+    left: -16%;
+    top: -21%;
+}
+
+#back .circleMain1,
+#back .circleMain2 {
+    background-color: #7300bc42;
+    position: absolute;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 100%;
+}
+
+#back .circleMain1::after {
+    left: -16%;
+    top: -21%;
+}
+
+#back .circleMain1::after,
+#back .circleMain2::after {
+    content: "";
+    background-color: #7300bc42;
+    position: absolute;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 100%;
+}
+
+#back .circleMain2 {
+    right: -16%;
+    bottom: -21%;
+}
+
+#back .circleMain2::after {
+    right: -16%;
+    bottom: -21%;
+}
+
+/* Styling Pre Nav */
+#PreNav {
+    display: flex;
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#PreNav #burger {
+    left: 1rem;
+}
+
+#PreNav img {
+    width: 10rem;
+}
+
+#PreNav #LogoLable {
+    color: red;
+}
+
+#PreNav #btns {
+    visibility: visible;
+}
+
+#btns {
+    position: absolute;
+    right: 3em;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "cart person"
+        "cartl personl";
+}
+
+#btns span:hover {
+    color: #666666;
+}
+
+
+/* Styling The main nav */
+#MainNav {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.3s all ease-in-out;
+}
+
+#MainNav #NavClose {
+    right: 2rem;
+    font-weight: bolder;
+    top: 0.9rem;
+    margin-top: 0.6em;
+    font-size: 1.5em;
+}
+
+#MainNav img {
+    width: 7rem;
+    transition: 0.2s all ease-in-out;
+    transform: translate(-10em, 0);
+    visibility: hidden;
+}
+
+#MainNav ol {
+    list-style: none;
+}
+
+#MainNav ol a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 5px 15px;
+    text-shadow: #000 1px 1px 1px;
+}
+
+#MainNav ol a:hover::before {
+    width: 100%;
+}
+
+#MainNav ol a::before {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: rgba(241, 53, 78, 0.753);
+    position: absolute;
+    bottom: 0;
+    transition: 0.2s all ease-in-out;
+}
+
+#SearchInputNav {
+    height: 1.5pc;
+    background: transparent;
+    border: none;
+    font-size: 1.3pc;
+    outline: none;
+    padding: 5px;
+    border-bottom: 2px solid black;
+}
+
+#SearchInputNav:valid~label {
+    transform: translate(0, -15px);
+    font-size: 0.7pc;
+    color: #000;
+}
+
+#SearchFormNav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#SearchFormNav label {
+    position: absolute;
+    left: 36px;
+    ;
+    z-index: -1;
+    font-size: 1.2pc;
+    transition: 0.2s all ease-in-out;
+}
+
+
+#MainNav #btns {
+    display: none;
+}
+
+/* Designing the main content ares */
+#info {
+    min-height: 25rem;
+    background-image: url("../Images/infoBg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin-top: 2rem;
+}
+
+#info p {
+    padding: 15px;
+    max-width: 34rem;
+    font-size: large;
+    border: 1px solid;
+    /* font-weight: bold; */
+}
+
+/* Dedignning the card */
+#shoeCards {
+    display: grid;
+    width: 100%;
+    margin-top: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0.5em;
+    place-items: center;
+}
+
+#shoeCards .card {
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 0.6rem;
+    border: 1px solid;
+    max-width: 15em;
+}
+
+#shoeCards .card img {
+    width: 15rem;
+}
+
+#shoeCards .card .info {
+    margin-top: 0.8em;
+}
+
+#shoeCards .card .price {
+    display: flex;
+    padding: 0.2em;
+}
+
+#shoeCards .card .price * {
+    font-weight: bolder;
+    padding: 0.2em;
+}
+
+#shoeCards .card .price {
+    display: flex;
+    padding: 0.2em;
+}
+
+#shoeCards .card .info img {
+    width: 5rem;
+}
+
+#shoeCards .card .info .price .new {
+    color: #009900;
+}
+
+#shoeCards .card .info .price .old {
+    color: #990000;
+}
+
+#shoeCards .card .info label {
+    font-size: small;
+}

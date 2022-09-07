@@ -1,0 +1,109 @@
+/* Making some universal class to acces thorough this project */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+
+:root {
+    --backCol: #04a2db;
+    --frontCol: #008abc;
+}
+
+
+.center_child_flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center_child_grid {
+    display: grid;
+    place-items: center;
+}
+
+.NavStyle * {
+    margin: 5px;
+}
+
+.MarginTop0 {
+    margin-top: 0;
+}
+
+.box_shadow {
+    box-shadow: #000 2px 2px 5px;
+}
+
+.glassBg {
+    backdrop-filter: blur(18px);
+    background-color: #c2d9ff5e;
+}
+
+.Cut {
+    position: relative;
+    text-decoration: line-through;
+    text-decoration-color: #990000;
+}
+
+.sensitive {
+    display: none;
+}
+
+.btn {
+
+    width: 6em;
+    height: 2.5em;
+    font-weight: bolder;
+    font-family: monospace;
+    font-size: 1.2em;
+    outline: none;
+    background: linear-gradient(45deg, #6bf8ff70, #0000);
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: #000 3px 3px 6px;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #0000, #6bf8ff70);
+    font-size: 1.1rem;
+}
+
+.cardbuttons:hover {
+    background: #bee2ff8c;
+}
+
+.cardbuttons {
+    margin: 0.5em 0;
+    outline: #000;
+    height: 3em;
+    border: 1px solid #000;
+    border-radius: 0.5em;
+    background: transparent;
+    font-size: 1em;
+    font-weight: bolder;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 0.2s ease-in-out;
+}
+
+.MainNavSticky {
+    position: sticky;
+    z-index: 15;
+    top: 0;
+}
+
+.NaviBtn {
+    position: absolute;
+    background: transparent;
+    border: none;
+    display: none;
+}
+
+.ShowNav {
+    transform: translate(0, -10vh) !important;
+}

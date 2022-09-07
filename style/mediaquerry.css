@@ -1,0 +1,91 @@
+@media only screen and (max-width: 1127px) {
+    #shoeCards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 562px) {
+    #shoeCards {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+
+    /* Changing The Background In mobilr view */
+    #back {
+        background-image: url("../Images/Mobile Bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #back .circleMain1,
+    #back .circleMain2 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 863px) {
+
+    /* Changin the style of shopping cards */
+    #shoeCards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Showing the Navigation Buttons */
+    .NaviBtn {
+        display: block;
+    }
+
+    /* Changin the style of nab bar */
+    #MainNav * {
+        margin-top: 1em;
+        margin-bottom: 0.2em;
+    }
+
+    #MainNav {
+        transform: translate(0, -200vh);
+        position: sticky;
+        flex-direction: column;
+        background: #b9c9e5e0;
+        flex-direction: column;
+        top: 3.6em;
+        position: fixed;
+        width: 100%;
+        padding: 0;
+    }
+
+    #MainNav img {
+        transform: translate(0, 0) !important;
+        visibility: visible !important;
+    }
+
+    #MainNav ol {
+        flex-direction: column;
+    }
+
+    #SearchInputNav {
+        max-width: 7em;
+    }
+
+    #MainNav #btns {
+        display: block;
+        position: unset;
+    }
+
+    #PreNav {
+        box-shadow: #000 2px 2px 5px;
+        position: sticky;
+        z-index: 15;
+        top: 0;
+    }
+
+    #PreNav img {
+        width: 6rem;
+    }
+
+    #PreNav #btns {
+        visibility: hidden;
+    }
+}
