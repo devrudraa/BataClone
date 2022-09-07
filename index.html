@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Images/BataIconFav.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style/universal_class.css">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/mediaquerry.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="/style/icon.css">
+    <title>Shoe Shop</title>
+</head>
+
+<body>
+    <!-- Making the background of the site -->
+    <div id="back">
+        <div class="circleMain1"></div>
+        <div class="circleMain2"></div>
+    </div>
+    <!-- Making a nav bar -->
+    <nav id="PreNav" class="glassBg">
+        <button id="burger" class="NaviBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" style="width: 2em;" viewBox="0 0 448 512">
+                <path
+                    d="M432 350H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16A16" />
+            </svg>
+        </button>
+
+        <a href="#">
+            <img src="Images/Logo.png" alt="Logo" />
+        </a>
+        <span id="LogoLable">
+            <h4>Store</h4>
+        </span>
+        <div id="btns">
+
+            <span class="material-symbols-outlined" style="grid-area: cart;">
+                <!-- shopping_cart -->
+            </span>
+            <label for="Cart" style="grid-area: cartl;">Cart</label>
+
+            <span class="material-symbols-outlined" style="grid-area: person;">
+                <!-- person -->
+            </span>
+            <label for="Account" style="grid-area: personl;">Account</label>
+
+        </div>
+    </nav>
+
+    <nav id="MainNav" class="MainNavSticky MarginTop0 box_shadow glassBg">
+        <button id="NavClose" class="NaviBtn">
+            X
+        </button>
+        <img src="Images/Logo.png" alt="Logo" />
+        <ol class="center_child_flex MarginTop0">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+        </ol>
+        <form id="SearchFormNav">
+
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                    d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+            </svg>
+            <input type="search" autocomplete="off" id="SearchInputNav" required>
+            <label for="search">Search</label>
+        </form>
+
+        <div id="btns">
+
+            <span class="material-symbols-outlined" style="grid-area: cart;">
+                <!-- shopping_cart -->
+            </span>
+            <label for="Cart" style="grid-area: cartl;">Cart</label>
+
+            <span class="material-symbols-outlined" style="grid-area: person;">
+                <!-- person -->
+            </span>
+            <label for="Account" style="grid-area: personl;">Account</label>
+
+        </div>
+
+    </nav>
+
+    <div id="info" class="box_shadow">
+
+        <p class="box_shadow glassBg">
+            Bata India is the largest retailer and leading manufacturer of footwear in India and is a part of the Bata
+            Shoe Organization.
+
+            Incorporated as Bata Shoe Company Private Limited in 1931, the company was set up initially as a small
+            operation in Konnagar (near Calcutta) in 1932. In January 1934, the foundation stone for the first building
+            of Bata's operation - now called the Bata. In the years that followed, the overall site was doubled in area.
+            This township is popularly known as Batanagar. It was also the first manufacturing facility in the Indian
+            shoe industry to receive the ISO: 9001 certification.
+
+            The Company went public in 1973 when it changed its name to Bata India Limited. Today, Bata India has
+            established itself as India's largest footwear retailer. Its retail network of over 1375 stores gives it a
+            reach / coverage that no other footwear company can match. The stores are present in good locations and can
+            be found in all the metros, mini-metros and towns.
+        </p>
+    </div>
+
+    <div id="shoeCards">
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
